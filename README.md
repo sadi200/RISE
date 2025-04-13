@@ -21,8 +21,8 @@ A command-line tool to automate interactions with the Rise Testnet blockchain. T
 Clone the repository:
 
 ```bash
-git clone https://github.com/airdropinsiders/Rise-Testnet-Bot.git
-cd Rise-Testnet-Bot
+git clone https://github.com/sadi200/RISE.git
+cd RISE
 ```
 
 Install the dependencies:
