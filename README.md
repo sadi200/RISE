@@ -91,11 +91,6 @@ The bot uses the following contract addresses on Rise Testnet:
 
 This bot is for educational purposes and testing on Rise Testnet only. Do not use it on mainnet or with real funds. Always verify contract addresses and transactions before confirming.
 
-## 🤝 Community
-
-Join our community for updates and support:
-- Telegram: [https://t.me/AirdropInsiderID](https://t.me/AirdropInsiderID)
-
 ## 📜 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
