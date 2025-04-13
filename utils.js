@@ -69,24 +69,27 @@ async function confirmTransaction(details) {
 async function displayBanner(provider) {
   try {
     const blockNumber = await provider.getBlockNumber();
-    const gasPrice = await provider.getGasPrice();
-    const gasPriceGwei = ethers.utils.formatUnits(gasPrice, 'gwei');
-    const bannerText = `
+const gasPrice = await provider.getGasPrice();
+const gasPriceGwei = ethers.utils.formatUnits(gasPrice, 'gwei');
+const bannerText = `
 ${chalk.white('===============================================')}
 ${chalk.cyan('              RISE TESTNET AUTO BOT')}
-${chalk.yellow('     Join Us: https://t.me/AirdropInsiderID ')}
+${chalk.yellow('     Join Us: https://t.me/Earnpoint10 ')}
 ${chalk.yellow(`        Block: ${blockNumber} | Gas: ${parseFloat(gasPriceGwei).toFixed(2)} Gwei `)}
-${chalk.white('===============================================')}
-    `;
-    console.log(bannerText);
+${chalk.yellow('              ')}${chalk.red.bold('EARN')}${chalk.yellow.bold(' & ')}${chalk.red.bold('POINT')}
+${chalk.blue('===============================================')}
+`;
+console.log(bannerText);
+
   } catch (error) {
     console.error(chalk.red('Error fetching network status:', error.message, '❌'));
     const bannerText = `
 ${chalk.white('===============================================')}
 ${chalk.cyan('              RISE TESTNET AUTO BOT')}
-${chalk.yellow('     Join Us: https://t.me/AirdropInsiderID ')}
-${chalk.yellow('     Network status unavailable')}
-${chalk.white('===============================================')}
+${chalk.blue('     Join Us: https://t.me/Earnpoint10 ')}
+${chalk.yellow(`        Block: ${blockNumber} | Gas: ${parseFloat(gasPriceGwei).toFixed(2)} Gwei `)}
+${chalk.yellow('              ')}${chalk.red.bold('EARN')}${chalk.yellow.bold(' & ')}${chalk.red.bold('POINT')}
+${chalk.blue('===============================================')}
     `;
     console.log(bannerText);
   }
